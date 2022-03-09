@@ -14,14 +14,14 @@
   --transition: 0.3s;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-* {
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 ul {
@@ -283,7 +283,7 @@ footer {
 
 @media screen and (max-width: 720px) {
   nav {
-    padding: 1.5rem 1rem;
+    padding: 1.1rem 1rem;
   }
   nav ul {
     position: fixed;
@@ -312,5 +312,11 @@ footer {
 
   nav ul.show {
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 420px) {
+  nav {
+    width: 100%;
   }
 }
