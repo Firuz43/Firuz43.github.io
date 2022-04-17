@@ -1,19 +1,8 @@
+const hamburgerButton = document.getElementById('hamburger')
+const navList = document.getElementById('nav-list')
 
-// Burger menu
-const burger = document.querySelector('#burger-menu');
-const ul = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
+function toggleButton() {
+    navList.classList.toggle('show')
+}
 
-burger.addEventListener("click", () => {
-    ul.classList.toggle("show");
-});
-
-
-// clicking links remove burger menu
-const navLink = document.querySelectorAll(".nav-link");
-
-navLink.forEach((link) =>
-  link.addEventListener("click", () => {
-    ul.classList.remove("show");
-  })
-);
+hamburgerButton.addEventListener('click', toggleButton)
