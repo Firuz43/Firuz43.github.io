@@ -65,9 +65,9 @@ nav {
 ul {
   display: flex;
   list-style-type: none;
-  width: 500px;
+  width: 450px;
   justify-content: space-around;
-  font-size: 30px;
+  font-size: 20px;
 }
 
 li {
@@ -102,8 +102,7 @@ p {
 }
 
 .hero-text {
-  margin-left: 80px;
-  margin-bottom: 200px;
+  padding: 50px;
 }
 
 .button {
