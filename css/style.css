@@ -56,6 +56,10 @@ footer {
 nav {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  height: 15vh;
 }
 
 ul {
@@ -128,7 +132,7 @@ p {
 }
 
 .logo {
-  height: 80px;
+  height: 40px;
   margin: 30px;
 }
 .social {
@@ -207,6 +211,13 @@ a {
 .hamburger:focus {
   outline: 0;
 }
+
+/* Change background when scrolling */
+.bgColor {
+  transition: all 1s;
+  background-color: #212529;
+}
+
 
 @media only screen and (max-width: 1000px) {
   .hamburger {
